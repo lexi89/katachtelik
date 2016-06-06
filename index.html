@@ -14,14 +14,17 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Google fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Istok+Web|Lora' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web|Lora|Dancing+Script' rel='stylesheet' type='text/css'>
     <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Slick slider library -->
+    <link rel="stylesheet" type="text/css" href="slick2/slick.css"/>
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,125 +37,111 @@
 
 <body>
 
-    <!-- Header -->
-    <header id="top" class="header">
-        <div id="header-text">
-            <h1>Hi,</h1>
-            <div id="subhead">
-              <p>thanks for stopping by! <br> <br>
-
-                <span class="highlight"><strong>I'm Kat</strong></span> — a copywriter with 5 years of experience in direct digital marketing, currently based in <span class = "highlight">London.</span></p>
-            </div>
+  <!-- Header -->
+  <header id="top" class="header">
+      <div id="header-text">
+          <h1>Hi, I'm Kat.</h1>
+          <div id="subhead">
             <br>
-        </div>
-    </header>
-    <section id="summary">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 text-center">
-                  <h1>Work stuff.</h1>
-                  <hr class="small">
-                  <div class="row">
-                    <p>I had a chance to learn and grow in cross-culture teams, ranging from 4-pax start-up to 200-pax international company. In that time I created a lush potpourri of copy — sales pages, content emails, funnels, video scripts, product descriptions, blog posts... You name it, I've probably done it.
-
-                    I believe copywriting is both science and art. A good copywriter should be creative AND scientific, producing exciting copy and results.
-
-                    Scroll down to see my portfolio and some referrals.
-                    </p>
-
-                  </div>
-              </div>
+            <p class = "thanks"> <span class = "highlight"><strong>Thanks</strong></span> for stopping by.</p>
+            <p id = "subheading">I'm a <span class="highlight"><strong>copywriter</strong></span> with 5 years of experience in direct digital marketing, currently based in <span class = "highlight"><strong>London.</strong></span></p>
+              </p>
           </div>
+          <br>
       </div>
+  </header>
+  <section id="summary">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h1>Work stuff.</h1>
+                <hr class="small">
+                <div class="row">
+                  <p>I had a chance to learn and grow in cross-culture teams, ranging from 4-pax start-up to 200-pax international company. In that time I created a lush potpourri of copy — sales pages, content emails, funnels, video scripts, product descriptions, blog posts... You name it, I've probably done it.</p>
+<p>
+                  I believe copywriting is both science and art. A good copywriter should be creative AND scientific, producing exciting copy and results.
+</p><p>
+                  Scroll down to see my portfolio and some referrals.
+                  </p>
 
-    </section>
-    <!-- Testimonials -->
-    <section id="testimonials" class="testimonials">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <h1 class = "text-center">Referrals</h1><br>
-        <div class="item active">
-          <div class="floating-head">
-            <img src="/img/Magda.jpg" alt="" class = "floating-head-image">
-            <p class="person-desc">Some person</p>
-          </div>
-          <div class="testimonial-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fuga soluta vero in, porro earum repellendus a vel eum et adipisci laborum, saepe itaque deserunt. Nobis iure, maxime incidunt sapiente?
-          </div>
+                </div>
+            </div>
         </div>
+    </div>
 
-        <div class="item">
-          <div class="floating-head">
-            <img src="/img/joanna.jpg" alt="" class = "floating-head-image">
-            <p class="person-desc">Some person</p>
-          </div>
-          <div class="testimonial-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fuga soluta vero in, porro earum repellendus a vel eum et adipisci laborum, saepe itaque deserunt. Nobis iure, maxime incidunt sapiente?
-          </div>
+  </section>
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials">
+    <!-- Wrapper for slides -->
+    <h1 class = "text-center">Referrals</h1>
+    <hr class="small">
+
+    <div class="carousel">
+      <div class="referral">
+        <div class="floating-head">
+          <img src="/img/Magda.jpg" alt="" class = "floating-head-image">
+          <p class="person-desc"><strong>Magda (Kay) Kwiatkowska </strong><br> Business Consultant <br> & Life Coach</p>
         </div>
-
-        <div class="item">
-          <div class="floating-head">
-            <img src="/img/pEwa2.jpg" alt="" class = "floating-head-image">
-            <p class="person-desc">Some person</p>
-          </div>
-          <div class="testimonial-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fuga soluta vero in, porro earum repellendus a vel eum et adipisci laborum, saepe itaque deserunt. Nobis iure, maxime incidunt sapiente?
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="floating-head">
-            <img src="/img/Samuel.jpg" alt="" class = "floating-head-image">
-            <p class="person-desc">Some person</p>
-          </div>
-          <div class="testimonial-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fuga soluta vero in, porro earum repellendus a vel eum et adipisci laborum, saepe itaque deserunt. Nobis iure, maxime incidunt sapiente?
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="floating-head">
-            <img src="/img/szymon.jpg" alt="" class = "floating-head-image">
-            <p class="person-desc">Some person</p>
-          </div>
-          <div class="testimonial-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fuga soluta vero in, porro earum repellendus a vel eum et adipisci laborum, saepe itaque deserunt. Nobis iure, maxime incidunt sapiente?
-          </div>
+        <div class="testimonial-text">
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nobis incidunt omnis maiores sequi pariatur non porro amet excepturi quae vero saepe eaque vel, aliquid veniam facilis praesentium, aperiam voluptates."
         </div>
       </div>
 
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+      <div class="referral">
+        <div class="floating-head">
+          <img src="/img/joanna.jpg" alt="" class = "floating-head-image">
+          <p class="person-desc"><strong>Joanna Grudzinska </strong><br>Advertising Specialist at Mindvalley </p>
+        </div>
+        <div class="testimonial-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi corrupti illum aspernatur suscipit blanditiis provident iste veritatis, officiis veniam dignissimos, eligendi odio quo, ullam. Laudantium suscipit reiciendis, architecto repellendus!
+        </div>
       </div>
-        <!-- /.container -->
-    </section>
+
+      <div class="referral">
+        <div class="floating-head">
+          <img src="/img/pEwa2.jpg" alt="" class = "floating-head-image">
+          <p class="person-desc"><strong>Ewa Wysocka </strong><br>Founder of Good Tribe Consulting</p>
+        </div>
+        <div class="testimonial-text">
+          I have worked with Kat on several projects and observed her growth in the field of professional direct response copywriting. There is definitely not many people out there who can do such excellent copy directed to both Polish and English audience. I can definitely recommend Kat!
+        </div>
+      </div>
+
+      <div class="referral">
+        <div class="floating-head">
+          <img src="/img/Samuel.jpg" alt="" class = "floating-head-image">
+          <p class="person-desc"><strong>Samuel P. N. Cook </strong><br>Partner at Apzumi</p>
+        </div>
+        <div class="testimonial-text">
+          I hired Kat to write emails for me. These emails were well written, delivered on time. Instead of just writing emails, she gave me a coherent strategy to go along with them. She is a master of her craft, and will surely help any client she works for improve their engagement, brand, and most importantly their bottom line. If you are looking for well written, strategy emails that work: I could not recommend anyone more highly than Kat.
+        </div>
+      </div>
+
+
+      <div class="referral">
+        <div class="floating-head">
+          <img src="/img/szymon.jpg" alt="" class = "floating-head-image">
+          <p class="person-desc"><strong>Szymon Berbeka </strong><br>Chief Operations Officer</p>
+        </div>
+        <div class="testimonial-text">
+          Z Kasią miałem okazję współpracować przy projekcie e-learningowym Life and Career Management System. Jej doświadczenie w copywritingu, znajomość branży i umiejętność dopasowania do klienta spowodowały, że powstawanie tekstów (w sumie ponad 100 stron) poszło sprawnie i terminowo. Polecam!
+        </div>
+      </div>
+    </div>
+
+      <!-- /.container -->
+  </section>
 
     <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
+  <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
+              <div class="col-md-10 col-lg-offset-1 text-center">
                     <h1>Portfolio</h1>
                     <hr class = "small">
-                    <p>From ethical hacking and cyber security, to personal growth, coaching and yoga... to herbal teas and gothic fashion e-shop. I've written copy for all sorts of clients and markets across the globe — mainly for the global English-speaking crowd, but also for the German, Polish and Indonesian audience. This copywriting portfolio has just a tiny taster of my digital work. Please, dig in.</p>
-                    <hr class="small">
+                    <p class = "narrow">From ethical hacking and cyber security, to personal growth, coaching and yoga... to herbal teas and gothic fashion e-shop. I've written copy for all sorts of clients and markets across the globe — mainly for the global English-speaking crowd, but also for the German, Polish and Indonesian audience. This copywriting portfolio has just a tiny taster of my digital work. Please, dig in.</p>
+                    <br>
+                    <br>
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="portfolio-item">
@@ -194,6 +183,26 @@
                                 <a href="#">Link</a>
                             </div>
                         </div>
+                        <div class="col-sm-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="/img/mateus.svg">
+                                </a>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quos deleniti nostrum ullam blanditiis modi, eveniet, tenetur sapiente quo. In delectus nam ipsum totam quae magni quis dolor aperiam unde.</p>
+                                <a href="#">Link</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="/img/portalyogi.png">
+                                </a>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quos deleniti nostrum ullam blanditiis modi, eveniet, tenetur sapiente quo. In delectus nam ipsum totam quae magni quis dolor aperiam unde.</p>
+                                <a href="#">Link</a>
+                            </div>
+                        </div>
                     </div>
                     <!-- /.row (nested) -->
                 </div>
@@ -203,7 +212,7 @@
         </div>
         <!-- /.container -->
     </section>
-
+    <!-- About me -->
   <section id = "about-me">
 
     <div id="about-me-textbox">
@@ -216,7 +225,7 @@
       <p>Because I believe that "what goes around, comes around", whenever possible I get involved in (hands-on or digital) volunteer projects. Some of them focus on animal welfare, whereas other on human causes — like women empowerment through micro-loans (India) or coaching for underprivileged refugee kids (Malaysia). For more details on these, check out my LinkedIn profile.</p>
     </div>
   </section>
-
+    <!-- Contact -->
   <section id="contact">
     <div class="container">
         <div class="row">
@@ -227,41 +236,66 @@
                   <p>Need some direct marketing copywriting? Strategic social media? Content strategy? Or the full works?
                   </p>
                   <p>Get in touch for rough prices and details.</p>
-
                 </div>
+                <form action= "https://formspree.io/achtelik.kasia@gmail.com" method="POST">
+                  <div class="form-group">
+                    <input type="text" class="form-control details" id="name" placeholder="Name" name= "name">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control details" id="email" placeholder="Email address" name = "email">
+                  </div>
+                  <div class="form-group">
+                    <textarea class = "form-control" id = "message" name="message" rows="8" cols="40" placeholder="Type your message here..."></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-default btn-lg pull-left">Send</button>
+                </form>
             </div>
         </div>
     </div>
   </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-1x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-linkedin fa-fw fa-1x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-envelope fa-fw fa-1x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Kat Achtelik 2016</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-10 col-lg-offset-1 text-center">
+                  <ul class="list-inline">
+                      <li>
+                          <a href="#"><i class="fa fa-facebook fa-fw fa-1x"></i></a>
+                      </li>
+                      <li>
+                          <a href="#"><i class="fa fa-linkedin fa-fw fa-1x"></i></a>
+                      </li>
+                      <li>
+                          <a href="#"><i class="fa fa-envelope fa-fw fa-1x"></i></a>
+                      </li>
+                  </ul>
+                  <hr class="small">
+                  <p class="text-muted">Copyright &copy; Kat Achtelik 2016</p>
+              </div>
+          </div>
+      </div>
+  </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+  <!-- Slick slider js -->
+  <script type="text/javascript" src="slick2/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.carousel').slick({
+        autoplay: true,
+        // arrows: true,
+        swipeToSlide: true,
+        fade: true,
+        prevArrow: '<button type="button" class="line-arrow left"></button>',
+        nextArrow: '<button type="button" class="line-arrow right"></button>'
+      });
+    });
+  </script>
+
 </body>
 
 </html>

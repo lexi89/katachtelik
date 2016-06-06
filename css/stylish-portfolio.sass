@@ -1,0 +1,247 @@
+/*!
+ * Code licensed under the Apache License v2.0.
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+/* Global Styles */
+
+@import vars.sass
+
+html,
+body
+  width: 100%
+  height: 100%
+
+\:focus
+  outline: none
+
+h1,h2,h3,h4,h5
+  font-family: 'Dancing Script', cursive
+
+body, p, a
+  font-family: $body-font
+  font-size: $body-font-size
+
+a
+  color: $highlight-color
+  text-decoration: underline
+
+h1
+  font-size: 56px
+
+p
+  margin-bottom: 20px
+
+section
+  padding: 75px
+
+
+/* Header */
+.highlight
+  color: $highlight-color
+
+.header
+  position: relative
+  width: 100%
+  height: 100%
+  padding: 50px
+  background: url(../img/header.jpg) no-repeat center center scroll
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  background-size: cover
+  -o-background-size: cover
+  display: flex
+  justify-content: flex-end
+  align-items: center
+
+
+#header-text
+  padding: 50px
+  background-color: rgba(0, 0, 0, 0.8)
+  width: 700px
+  height: auto
+  color: white
+  position: relative
+  left: -177px
+
+
+#header-text h1
+  font-size: 4em
+  font-family: 'Dancing Script', cursive
+
+#subhead p
+  font-size: 33px
+
+#subheading
+  line-height: 40px
+
+.thanks
+  margin-bottom: 30px
+
+/* Summary */
+
+/* Testimonials*/
+
+#testimonials
+  height: auto
+  background-color: $background-on-color
+
+.slick-slide
+  display: flex
+  justify-content: center
+  align-items: center
+
+.floating-head
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  margin-right: 35px
+
+.floating-head-image
+  margin: 20px
+  border-radius: 200px
+  width: 200px
+  height: auto
+
+
+.person-desc
+  text-align: center
+  font-style: italic
+  width: 300px
+
+.testimonial-text
+  width: 500px
+  font-style: italic
+
+/* Testimonial arrows*/
+
+.line-arrow
+  z-index: 999
+  background-color: transparent
+  display: inline-block
+  font-size: 12px /*set the size for arrow*/
+  width: 4em
+  height: 4em
+  margin-top: -2em
+
+.line-arrow.left
+  border-top: 1px solid $highlight-color
+  border-left: 1px solid $highlight-color
+  transform: rotate(-54deg) skew(-20deg)
+  position: relative
+  left: 350px
+  border-right: none
+  border-bottom: none
+  top: 175px
+
+
+.line-arrow.right
+  float: right
+  position: relative
+  bottom: 230px
+  right: 275px
+  border: 1px solid $highlight-color
+  border-bottom: none
+  border-left: none
+  transform: rotate(54deg) skew(20deg)
+
+
+.line-arrow:active,
+.line-arrow.active
+  border-width: 2px
+
+
+/* About Me */
+#about-me
+  position: relative
+  width: 100%
+  height: 100%
+  background: url(../img/aboutme.jpg) no-repeat center center scroll
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  background-size: cover
+  -o-background-size: cover
+  display: flex
+  justify-content: flex-end
+  padding: 50px
+
+
+#about-me-textbox
+  background-color: rgba(0, 0, 0, 0.8)
+  width: 700px
+  color: white
+  padding: 50px
+  height: auto
+  position: absolute
+  right: 400px
+
+/* Contact form*/
+
+.form-control
+  border: none
+  box-shadow: none
+  margin: 10px
+  height: auto
+  font-size: $body-font-size
+  &:focus
+    box-shadow: none
+
+.details
+  border-bottom: 2px solid $highlight-color
+  border-radius: 0px
+
+#name
+  width: 300px
+
+#email
+  width: 300px
+
+#message
+  border: 2px solid $highlight-color
+
+button[type=submit]
+  margin-left: 10px
+
+// buttons
+
+.btn-default
+  background-color: $highlight-color
+  color: white
+  &:hover
+    background-color: darken($highlight-color, 10%)
+    @include transition(background-color .3s ease)
+    color: white
+/* Custom Horizontal Rule */
+
+
+hr.small
+  max-width: 100px
+  border-top: 1px solid $highlight-color
+
+/* Portfolio */
+
+.narrow
+  padding: 0px 100px
+.portfolio
+  padding: 50px 0
+
+.portfolio-item
+  /*margin-bottom: 30px*/
+  margin: 20px
+
+.img-portfolio
+  margin: 0 auto
+  /*min-width:250px*/
+  /*max-width:350px*/
+  height: 75px
+  width: auto
+
+.img-portfolio:hover
+  opacity: 0.8
+
+
+/* Footer */
+
+footer
+  padding: 100px 0
