@@ -9,11 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+    <title>Kat Achtelik — London-based Copywriter</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web|Lora' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
 
@@ -32,42 +34,38 @@
 
 <body>
 
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap</a>
-            </li>
-            <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
-            </li>
-            <li>
-                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
-            </li>
-        </ul>
-    </nav>
-
     <!-- Header -->
     <header id="top" class="header">
-        <!-- <div id="header-text">
-            <h1>Hi, I'm Kat</h1>
-            <h3>Copywriter &amp; Sex Machine</h3>
-            <br>
-            <!-- <a href="#about" class="btn btn-dark btn-lg">Find Out More</a> -->
-        </div> -->
-    </header>
+        <div id="header-text">
+            <h1>Hi,</h1>
+            <div id="subhead">
+              <p>thanks for stopping by! <br> <br>
 
+                <span class="highlight"><strong>I'm Kat</strong></span> — a copywriter with 5 years of experience in direct digital marketing, currently based in <span class = "highlight">London.</span></p>
+            </div>
+            <br>
+        </div>
+    </header>
+    <section id="summary">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 text-center">
+                  <h1>Work stuff.</h1>
+                  <hr class="small">
+                  <div class="row">
+                    <p>I had a chance to learn and grow in cross-culture teams, ranging from 4-pax start-up to 200-pax international company. In that time I created a lush potpourri of copy — sales pages, content emails, funnels, video scripts, product descriptions, blog posts... You name it, I've probably done it.
+
+                    I believe copywriting is both science and art. A good copywriter should be creative AND scientific, producing exciting copy and results.
+
+                    Scroll down to see my portfolio and some referrals.
+                    </p>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    </section>
     <!-- Testimonials -->
     <section id="testimonials" class="testimonials">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -81,9 +79,10 @@
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
+        <h1 class = "text-center">Referrals</h1><br>
         <div class="item active">
           <div class="floating-head">
-            <img src="http://placehold.it/300x300" alt="" class = "floating-head-image">
+            <img src="/img/Magda.jpg" alt="" class = "floating-head-image">
             <p class="person-desc">Some person</p>
           </div>
           <div class="testimonial-text">
@@ -93,7 +92,7 @@
 
         <div class="item">
           <div class="floating-head">
-            <img src="http://placehold.it/300x300" alt="" class = "floating-head-image">
+            <img src="/img/joanna.jpg" alt="" class = "floating-head-image">
             <p class="person-desc">Some person</p>
           </div>
           <div class="testimonial-text">
@@ -103,7 +102,7 @@
 
         <div class="item">
           <div class="floating-head">
-            <img src="http://placehold.it/300x300" alt="" class = "floating-head-image">
+            <img src="/img/pEwa2.jpg" alt="" class = "floating-head-image">
             <p class="person-desc">Some person</p>
           </div>
           <div class="testimonial-text">
@@ -113,7 +112,17 @@
 
         <div class="item">
           <div class="floating-head">
-            <img src="http://placehold.it/300x300" alt="" class = "floating-head-image">
+            <img src="/img/Samuel.jpg" alt="" class = "floating-head-image">
+            <p class="person-desc">Some person</p>
+          </div>
+          <div class="testimonial-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fuga soluta vero in, porro earum repellendus a vel eum et adipisci laborum, saepe itaque deserunt. Nobis iure, maxime incidunt sapiente?
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="floating-head">
+            <img src="/img/szymon.jpg" alt="" class = "floating-head-image">
             <p class="person-desc">Some person</p>
           </div>
           <div class="testimonial-text">
@@ -135,123 +144,58 @@
         <!-- /.container -->
     </section>
 
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Our Services</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
-        </div>
-    </aside>
-
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Our Work</h2>
+                    <h1>Portfolio</h1>
+                    <hr class = "small">
+                    <p>From ethical hacking and cyber security, to personal growth, coaching and yoga... to herbal teas and gothic fashion e-shop. I've written copy for all sorts of clients and markets across the globe — mainly for the global English-speaking crowd, but also for the German, Polish and Indonesian audience. This copywriting portfolio has just a tiny taster of my digital work. Please, dig in.</p>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                    <img class="img-portfolio img-responsive" src="/img/zenward.png">
                                 </a>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quos deleniti nostrum ullam blanditiis modi, eveniet, tenetur sapiente quo. In delectus nam ipsum totam quae magni quis dolor aperiam unde.</p>
+                                <a href="#">Link</a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                    <img class="img-portfolio img-responsive" src="/img/qod.svg">
                                 </a>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quos deleniti nostrum ullam blanditiis modi, eveniet, tenetur sapiente quo. In delectus nam ipsum totam quae magni quis dolor aperiam unde.</p>
+                                <a href="#">Link</a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                    <img class="img-portfolio img-responsive" src="/img/logo-evercoach.png">
                                 </a>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quos deleniti nostrum ullam blanditiis modi, eveniet, tenetur sapiente quo. In delectus nam ipsum totam quae magni quis dolor aperiam unde.</p>
+                                <a href="#">Link</a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                    <img class="img-portfolio img-responsive" src="/img/logo-zentrepreneur.png">
                                 </a>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quos deleniti nostrum ullam blanditiis modi, eveniet, tenetur sapiente quo. In delectus nam ipsum totam quae magni quis dolor aperiam unde.</p>
+                                <a href="#">Link</a>
                             </div>
                         </div>
                     </div>
                     <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More Items</a>
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -260,56 +204,54 @@
         <!-- /.container -->
     </section>
 
-    <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+  <section id = "about-me">
+
+    <div id="about-me-textbox">
+      <h1>Other stuff</h1>
+      <br>
+      <p>As cheesy as it sounds, I'm passionate about... life, in totality of its majesty and lunacy. </p>
+
+      <p>I'm a Yoga Teacher, a foodie and a committed advocate of personal growth, movement and healthy lifestyle. I'm also a travel junkie, an amateur photographer and David Attenborough admirer.</p>
+
+      <p>Because I believe that "what goes around, comes around", whenever possible I get involved in (hands-on or digital) volunteer projects. Some of them focus on animal welfare, whereas other on human causes — like women empowerment through micro-loans (India) or coaching for underprivileged refugee kids (Malaysia). For more details on these, check out my LinkedIn profile.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h1>Get In Touch</h1>
+                <hr class="small">
+                <div class="row">
+                  <p>Need some direct marketing copywriting? Strategic social media? Content strategy? Or the full works?
+                  </p>
+                  <p>Get in touch for rough prices and details.</p>
+
                 </div>
             </div>
         </div>
-    </aside>
-
-    <!-- Map -->
-    <section id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-        <br />
-        <small>
-            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-        </small>
-        </iframe>
-    </section>
+    </div>
+  </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Start Bootstrap</strong>
-                    </h4>
-                    <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
-                        </li>
-                    </ul>
-                    <br>
                     <ul class="list-inline">
                         <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-1x"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            <a href="#"><i class="fa fa-linkedin fa-fw fa-1x"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                            <a href="#"><i class="fa fa-envelope fa-fw fa-1x"></i></a>
                         </li>
                     </ul>
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; Your Website 2014</p>
+                    <p class="text-muted">Copyright &copy; Kat Achtelik 2016</p>
                 </div>
             </div>
         </div>
@@ -320,39 +262,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    </script>
-
 </body>
 
 </html>
