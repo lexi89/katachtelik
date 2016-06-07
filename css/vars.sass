@@ -1,8 +1,14 @@
+
+html
+  font-size: 16px
+
+@function em($pixels)
+  @return #{$pixels/16}em
+
 $highlight-color: #07a4b5
 $body-font: "Lora", serif
 $body-font-size: 21px
 $background-on-color: rgba(205, 220, 240, 0.5)
-
 
 @mixin transition($args...)
   -webkit-transition: $args
@@ -11,22 +17,22 @@ $background-on-color: rgba(205, 220, 240, 0.5)
   -o-transition: $args
   transition: $args
 
-$phone: 480px
-$tablet: 768px
-$desktop: 1281px
+$phone: em(480)
+$tablet: em(768)
+$desktop: em(1281)
 
 @mixin XL
-  @media (min-width: $desktop)
+  @media only screen and (min-width: $desktop) and (-webkit-min-device-pixel-ratio: 1)
     @content
 
 @mixin desktop
-  @media (min-width: $tablet) and (max-width: $desktop)
+  @media only screen and (min-width: $tablet) and (max-width: $desktop) and (-webkit-min-device-pixel-ratio: 1)
     @content
 
 @mixin tablet
-  @media (min-width: $phone) and (max-width: $tablet)
+  @media only screen and (min-width: $phone) and (max-width: $tablet)
     @content
 
 @mixin phone
-  @media (min-width: 1px) and (max-width: $phone)
+  @media only screen and (min-width: 1px) and (max-width: $phone)
     @content
