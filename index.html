@@ -46,7 +46,6 @@
             <p class = "thanks"> <span class = "highlight"><strong>Thanks</strong></span> for stopping by.</p>
             <p id = "subheading">I'm a <span class="highlight"><strong>copywriter</strong></span> with 5 years of experience in direct digital marketing, currently based in <span class = "highlight"><strong>London.</strong></span></p>
             </p>
-
           </div>
           <br>
       </div>
@@ -57,8 +56,8 @@
   <section id="summary">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h1>Work stuff.</h1>
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h1>Work stuff</h1>
                 <hr class="small">
                 <div class="row">
                   <p>I had a chance to learn and grow in cross-culture teams, ranging from 4-pax start-up to 200-pax international company. In that time I created a lush potpourri of copy — sales pages, content emails, funnels, video scripts, product descriptions, blog posts... You name it, I've probably done it.</p>
@@ -146,13 +145,12 @@
   <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="row">
-              <div class="col-md-10 col-lg-offset-1 text-center">
+              <div class="col-md-10 col-md-offset-1 text-center">
                     <h1>Portfolio</h1>
                     <hr class = "small">
                     <p class = "narrow">From ethical hacking and cyber security, to personal growth, coaching and yoga... to herbal teas and gothic fashion e-shop. I've written copy for all sorts of clients and markets across the globe — mainly for the global English-speaking crowd, but also for the German, Polish and Indonesian audience. This copywriting portfolio has just a tiny taster of my digital work. Please, dig in.</p>
-                    <br>
-                    <br>
-                    <div class="row">
+
+                    <div class="row potfolio-container">
                         <div class="col-sm-6">
                             <div class="portfolio-item">
                                 <a href="#">
@@ -170,8 +168,7 @@
                                 </a>
                                 <br>
                                 <p><strong>About Us & Media</strong> as an example of my work with Queen Of Darkness — one of the leading brands in <strong>Gothic & Punk fashion</strong>. I wrote copy for them across the board — emails, pages, etc.— in both <strong>English & German.</strong></p>
-                                <a href="/img/qod1.jpg">Link</a> | <a href="/img/qod2.png">Link</a>
-                            </div>
+                                <a href="/img/qod1.jpg">Link</a> | <a href="/img/qod2.png">Link</a> <br class = "qod-breaks"> <br class = "qod-breaks">                           </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="portfolio-item">
@@ -210,7 +207,7 @@
                                 </a>
                                 <br>
                                 <p><strong>Sales pages (in Polish)</strong> as an example of my 3-year collaboration with yet another <strong>online yoga platform</strong> — Portal Yogi. These guys are ultra active, creating not only online courses, but also offline yoga events & retreats.</p>
-                                <a href="pyogi1.png">Link</a> | <a href="pyogi2.png">Link</a><br><br>
+                                <a href="pyogi1.png">Link</a> | <a href="pyogi2.png">Link</a> <br class = "yogi-breaks"> <br class = "yogi-breaks">
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -260,26 +257,32 @@
   <section id="contact">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
+            <div class="col-md-8 col-md-offset-2 text-center">
                 <h1>Get In Touch</h1>
                 <hr class="small">
                 <div class="row">
                   <p>Need some direct marketing copywriting? Strategic social media? Content strategy? Or the full works?
                   </p>
                   <p>Get in touch for rough prices and details.</p>
+
+                  <form action= "https://formspree.io/achtelik.kasia@gmail.com" method="POST">
+
+                    <div class="form-group">
+                      <input type="text" class="form-control details" id="name" placeholder="Name" name= "name">
+                    </div>
+
+                    <div class="form-group">
+                      <input type="email" class="form-control details" id="email" placeholder="Email address" name = "email">
+                    </div>
+
+                    <div class="form-group">
+                      <textarea class = "form-control" id = "message" name="message" rows="8" placeholder="Type your message here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-default btn-lg pull-left">Send</button>
+                  </form>
                 </div>
-                <form action= "https://formspree.io/achtelik.kasia@gmail.com" method="POST">
-                  <div class="form-group">
-                    <input type="text" class="form-control details" id="name" placeholder="Name" name= "name">
-                  </div>
-                  <div class="form-group">
-                    <input type="email" class="form-control details" id="email" placeholder="Email address" name = "email">
-                  </div>
-                  <div class="form-group">
-                    <textarea class = "form-control" id = "message" name="message" rows="8" cols="40" placeholder="Type your message here..."></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-default btn-lg pull-left">Send</button>
-                </form>
+
             </div>
         </div>
     </div>
@@ -292,15 +295,16 @@
               <div class="col-lg-10 col-lg-offset-1 text-center">
                   <ul class="list-inline">
                       <li>
-                          <a href="#"><i class="fa fa-facebook fa-fw fa-1x"></i></a>
+                          <a href="https://www.facebook.com/kat.achtelik" target="_blank"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
                       </li>
                       <li>
-                          <a href="#"><i class="fa fa-linkedin fa-fw fa-1x"></i></a>
+                          <a href="http://uk.linkedin.com/in/katachtelik" target="_blank"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
                       </li>
                       <li>
-                          <a href="#"><i class="fa fa-envelope fa-fw fa-1x"></i></a>
+                          <a href="mailto:achtelik.kasia@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
                       </li>
-                  </ul>
+                  </ul><br>
+                  <p class = "text-muted">Email: achtelik.kasia@gmail.com <br> Tel: +44 770 999 6157</p>
                   <hr class="small">
                   <p class="text-muted">Copyright &copy; Kat Achtelik 2016</p>
               </div>
@@ -322,7 +326,15 @@
         swipeToSlide: true,
         fade: true,
         prevArrow: '<button type="button" class="line-arrow left"></button>',
-        nextArrow: '<button type="button" class="line-arrow right"></button>'
+        nextArrow: '<button type="button" class="line-arrow right"></button>',
+        responsive: [
+          {
+            breakpoint: 860,
+            settings: {
+              arrows: false,
+            }
+          }
+        ]
       });
     });
   </script>

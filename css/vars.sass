@@ -3,9 +3,30 @@ $body-font: "Lora", serif
 $body-font-size: 21px
 $background-on-color: rgba(205, 220, 240, 0.5)
 
+
 @mixin transition($args...)
   -webkit-transition: $args
   -moz-transition: $args
   -ms-transition: $args
   -o-transition: $args
   transition: $args
+
+$phone: 480px
+$tablet: 768px
+$desktop: 1281px
+
+@mixin XL
+  @media (min-width: $desktop)
+    @content
+
+@mixin desktop
+  @media (min-width: $tablet) and (max-width: $desktop)
+    @content
+
+@mixin tablet
+  @media (min-width: $phone) and (max-width: $tablet)
+    @content
+
+@mixin phone
+  @media (min-width: 1px) and (max-width: $phone)
+    @content
