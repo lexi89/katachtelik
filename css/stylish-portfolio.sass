@@ -21,7 +21,8 @@ h1,h2,h3,h4,h5
 body, p, a
   font-family: $body-font
   font-size: 2vh
-
+  @include phone
+    font-size: 1rem
 
 a
   color: $highlight-color
@@ -73,7 +74,7 @@ section
   font-size: 1rem
   box-sizing: border-box
   padding: 4%
-  background-color: rgba(0, 0, 0, 0.8)
+  background-color: rgba(0, 0, 0, 0.6)
   width: 25%
   height: auto
   position: fixed
@@ -100,6 +101,7 @@ section
 #header-text h1
   font-size: 4rem
   font-family: 'Dancing Script', cursive
+  margin-bottom: 2.4rem
   @include desktop
     font-size: (4*0.9)em
   @include tablet
@@ -121,14 +123,14 @@ section
 
 #subheading
   margin: 0px
-  line-height: em(40)
+  line-height: 1.75em
   @include tablet
     margin-bottom: em(0)
   @include phone
     line-height: em(30)
 
 .thanks
-  margin-bottom:  em(30)
+  margin-bottom:  2.4rem
 
 // fancy scroll
 
@@ -206,6 +208,8 @@ section
   background-color: $background-on-color
   @include desktop
     padding:  em(75)  em(10)
+  @include phone
+    padding-top: 1em
 
 .slick-slider
   display: flex !important
@@ -250,7 +254,7 @@ section
     overflow: visible
 
 .testimonial-text
-  width:  em(500)
+  width: 50%
   font-style: italic
   @include tablet
     width:  em(300)
@@ -261,11 +265,11 @@ section
 /* Testimonial arrows*/
 
 .line-arrow
-  z-index: 999
+  z-index: 900
   background-color: transparent
   display: inline-block
-  font-size:  em(12) /*set the size for arrow*/
-  width: 5em
+  font-size:  1.25em /*set the size for arrow*/
+  width: 2em
   height: 2em
   margin-top: -2em
 
@@ -277,6 +281,10 @@ section
   left:  em(0)
   border-right: none
   border-bottom: none
+  @include tablet
+    display: none
+  @include phone
+    display: none
 
 .line-arrow.right
   right:  em(0)
@@ -284,6 +292,10 @@ section
   border-bottom: none
   border-left: none
   transform: rotate(54deg) skew(20deg)
+  @include tablet
+    display: none
+  @include phone
+    display: none
 
 
 .line-arrow:active,
@@ -303,13 +315,13 @@ section
   display: flex
   justify-content: flex-end
   @include desktop
-    background: url(../img/aboutme.jpg) no-repeat 40% 0% scroll
+    background: url(../img/aboutme.jpg) no-repeat 0% 0% scroll
     -webkit-background-size: cover
     -moz-background-size: cover
     background-size: cover
     -o-background-size: cover
   @include tablet
-    background: url(../img/aboutme.jpg) no-repeat  40% 0% scroll
+    background: url(../img/aboutme.jpg) no-repeat  0% 0% scroll
     -webkit-background-size: cover
     -moz-background-size: cover
     background-size: cover
@@ -323,9 +335,9 @@ section
 
 #about-me-textbox
   background-color: rgba(0, 0, 0, 0.8)
-  width:  50%
+  width: 50%
   color: white
-  padding:  3%
+  padding: 3%
   height: auto
   position: absolute
   left: 30%
@@ -336,6 +348,7 @@ section
     padding:  em(10)
     width: auto
     color: black
+    left: 0%
 
 #about-me-textbox h1
   font-size: 4rem
@@ -351,6 +364,8 @@ section
 
 #contact
   padding: 5% 0%
+  @include phone
+    padding: 1em
 
 .form-control
   border: none
@@ -410,6 +425,8 @@ hr.small
 
 .portfolio
   padding:  em(50)  em(0)
+  @include phone
+    padding-top: 1em
 
 .portfolio-item
   margin:  em(20)

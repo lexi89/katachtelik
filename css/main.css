@@ -21,6 +21,9 @@ h1, h2, h3, h4, h5 {
 body, p, a {
   font-family: "Lora", serif;
   font-size: 2vh; }
+  @media only screen and (min-width: 1px) and (max-width: 30em) {
+    body, p, a {
+      font-size: 1rem; } }
 
 a {
   color: #07a4b5;
@@ -73,7 +76,7 @@ section {
   font-size: 1rem;
   box-sizing: border-box;
   padding: 4%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 25%;
   height: auto;
   position: fixed;
@@ -102,7 +105,8 @@ section {
 
 #header-text h1 {
   font-size: 4rem;
-  font-family: "Dancing Script", cursive; }
+  font-family: "Dancing Script", cursive;
+  margin-bottom: 2.4rem; }
   @media only screen and (min-width: 48em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
     #header-text h1 {
       font-size: 3.6 em; } }
@@ -130,7 +134,7 @@ section {
 
 #subheading {
   margin: 0px;
-  line-height: 2.5em; }
+  line-height: 1.75em; }
   @media only screen and (min-width: 30em) and (max-width: 48em) {
     #subheading {
       margin-bottom: 0em; } }
@@ -139,7 +143,7 @@ section {
       line-height: 1.875em; } }
 
 .thanks {
-  margin-bottom: 1.875em; }
+  margin-bottom: 2.4rem; }
 
 #section06 a {
   padding-top: 4.375em; }
@@ -212,6 +216,9 @@ section {
   @media only screen and (min-width: 48em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
     #testimonials {
       padding: 4.6875em 0.625em; } }
+  @media only screen and (min-width: 1px) and (max-width: 30em) {
+    #testimonials {
+      padding-top: 1em; } }
 
 .slick-slider {
   display: flex !important;
@@ -262,7 +269,7 @@ section {
       overflow: visible; } }
 
 .testimonial-text {
-  width: 31.25em;
+  width: 50%;
   font-style: italic; }
   @media only screen and (min-width: 30em) and (max-width: 48em) {
     .testimonial-text {
@@ -273,11 +280,11 @@ section {
 
 /* Testimonial arrows */
 .line-arrow {
-  z-index: 999;
+  z-index: 900;
   background-color: transparent;
   display: inline-block;
-  font-size: 0.75em;
-  width: 5em;
+  font-size: 1.25em;
+  width: 2em;
   height: 2em;
   margin-top: -2em; }
 
@@ -289,6 +296,12 @@ section {
   left: 0em;
   border-right: none;
   border-bottom: none; }
+  @media only screen and (min-width: 30em) and (max-width: 48em) {
+    .line-arrow.left {
+      display: none; } }
+  @media only screen and (min-width: 1px) and (max-width: 30em) {
+    .line-arrow.left {
+      display: none; } }
 
 .line-arrow.right {
   right: 0em;
@@ -296,6 +309,12 @@ section {
   border-bottom: none;
   border-left: none;
   transform: rotate(54deg) skew(20deg); }
+  @media only screen and (min-width: 30em) and (max-width: 48em) {
+    .line-arrow.right {
+      display: none; } }
+  @media only screen and (min-width: 1px) and (max-width: 30em) {
+    .line-arrow.right {
+      display: none; } }
 
 .line-arrow:active,
 .line-arrow.active {
@@ -314,14 +333,14 @@ section {
   justify-content: flex-end; }
   @media only screen and (min-width: 48em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
     #about-me {
-      background: url(../img/aboutme.jpg) no-repeat 40% 0% scroll;
+      background: url(../img/aboutme.jpg) no-repeat 0% 0% scroll;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       background-size: cover;
       -o-background-size: cover; } }
   @media only screen and (min-width: 30em) and (max-width: 48em) {
     #about-me {
-      background: url(../img/aboutme.jpg) no-repeat 40% 0% scroll;
+      background: url(../img/aboutme.jpg) no-repeat 0% 0% scroll;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       background-size: cover;
@@ -348,7 +367,8 @@ section {
       right: 0em;
       padding: 0.625em;
       width: auto;
-      color: black; } }
+      color: black;
+      left: 0%; } }
 
 #about-me-textbox h1 {
   font-size: 4rem;
@@ -366,6 +386,9 @@ section {
 /* Contact form */
 #contact {
   padding: 5% 0%; }
+  @media only screen and (min-width: 1px) and (max-width: 30em) {
+    #contact {
+      padding: 1em; } }
 
 .form-control {
   border: none;
@@ -427,6 +450,9 @@ hr.small {
 
 .portfolio {
   padding: 3.125em 0em; }
+  @media only screen and (min-width: 1px) and (max-width: 30em) {
+    .portfolio {
+      padding-top: 1em; } }
 
 .portfolio-item {
   margin: 1.25em; }
