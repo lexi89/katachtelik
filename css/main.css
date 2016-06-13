@@ -106,7 +106,7 @@ section {
     #header-text {
       width: 60%;
       left: 35%;
-      top: 5%; } }
+      top: 10vh; } }
   @media only screen and (min-width: 1px) and (max-width: 48.0625em) and (orientation: landscape) {
     #header-text {
       padding: 2%; } }
@@ -123,11 +123,13 @@ section {
       font-size: 2.8 em; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     #header-text h1 {
+      margin-top: 0px;
       font-size: 2.5em;
-      margin-bottom: 1.8em; } }
+      margin-bottom: 1rem; } }
   @media only screen and (min-width: 1px) and (max-width: 48.0625em) and (orientation: landscape) {
     #header-text h1 {
-      font-size: 3em; } }
+      font-size: 2em;
+      margin-bottom: 0.5rem; } }
 
 #subhead p {
   font-size: 1em; }
@@ -161,7 +163,10 @@ section {
   margin-bottom: 2.4rem; }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     .thanks {
-      margin-bottom: 1.8rem; } }
+      margin-bottom: 1rem; } }
+  @media only screen and (min-width: 1px) and (max-width: 48.0625em) and (orientation: landscape) {
+    .thanks {
+      margin-bottom: 1rem; } }
 
 #section06 a {
   padding-top: 4.375em; }
