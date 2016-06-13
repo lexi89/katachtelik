@@ -64,7 +64,7 @@ section
     background-size: cover
   @include phone
     background: url(../img/header.jpg) no-repeat 30% 0% scroll
-    background-size: cover
+    background-size: 250% auto
 
 
 #header-text
@@ -93,8 +93,8 @@ section
     left: 40%
     top:  10%
   @include phone
-    width: 55%
-    left: 40%
+    width: 60%
+    left: 35%
     top:  15%
 
 #header-text h1
@@ -106,7 +106,7 @@ section
   @include tablet
     font-size: (4*0.7)em
   @include phone
-    font-size: 2rem
+    font-size: 3rem
 
 #subhead p
   font-size: 1em
@@ -117,7 +117,7 @@ section
   @include tablet
     font-size:  em(27*0.7)
   @include phone
-    font-size:  em(27*0.6)
+    font-size:  em(27*0.7)
 
 #subheading
   margin: 0px
@@ -151,8 +151,8 @@ section
   animation: sdb06 1.5s infinite
   box-sizing: border-box
   @include phone
-    border-left:  em(5) solid black
-    border-bottom:  em(5) solid black
+    border-left:  em(5) solid $highlight-color
+    border-bottom:  em(5) solid $highlight-color
     width: 2em
     height: 2em
     top: 100%

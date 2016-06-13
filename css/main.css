@@ -68,7 +68,7 @@ section {
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     .header {
       background: url(../img/header.jpg) no-repeat 30% 0% scroll;
-      background-size: cover; } }
+      background-size: 250% auto; } }
 
 #header-text {
   box-sizing: border-box;
@@ -97,8 +97,8 @@ section {
       top: 10%; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     #header-text {
-      width: 55%;
-      left: 40%;
+      width: 60%;
+      left: 35%;
       top: 15%; } }
 
 #header-text h1 {
@@ -113,7 +113,7 @@ section {
       font-size: 2.8 em; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     #header-text h1 {
-      font-size: 2rem; } }
+      font-size: 3rem; } }
 
 #subhead p {
   font-size: 1em; }
@@ -128,7 +128,7 @@ section {
       font-size: 1.18125em; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     #subhead p {
-      font-size: 1.0125em; } }
+      font-size: 1.18125em; } }
 
 #subheading {
   margin: 0px;
@@ -163,8 +163,8 @@ section {
   box-sizing: border-box; }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     #section06 a span {
-      border-left: 0.3125em solid black;
-      border-bottom: 0.3125em solid black;
+      border-left: 0.3125em solid #07a4b5;
+      border-bottom: 0.3125em solid #07a4b5;
       width: 2em;
       height: 2em;
       top: 100%; } }
