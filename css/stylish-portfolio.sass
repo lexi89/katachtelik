@@ -43,7 +43,6 @@ section
   @include phone
     padding: 0px em(20)
 
-
 /* Header */
 .highlight
   color: $highlight-color
@@ -57,11 +56,9 @@ section
   -moz-background-size: cover
   background-size: cover
   -o-background-size: cover
-  display: flex
-  justify-content: flex-end
+  // display: flex
+  // justify-content: flex-end
   align-items: center
-  // &:after
-  //   content: ""
   @include tablet
     background: url(../img/header.jpg) no-repeat 20% 0% scroll
     background-size: cover
@@ -71,32 +68,34 @@ section
 
 
 #header-text
-  font-size: 1rem
+  // font-size: 1rem
   box-sizing: border-box
   padding: 4%
   background-color: rgba(0, 0, 0, 0.6)
+  position: absolute
   width: 25%
+  left: 50%
+  top: 10%
   height: auto
-  position: fixed
+  // position: fixed
   // max-height: 700px
   color: white
-  position: absolute
   @include XL
     width: 40%
     left: 50%
-    top: 5%
+    top: 10%
   @include desktop
     width: 50%
     left: 40%
-    top: 5%
+    top: 10%
   @include tablet
     width: 50%
     left: 40%
     top:  10%
   @include phone
-    width: 50%
+    width: 55%
     left: 40%
-    top:  10%
+    top:  15%
 
 #header-text h1
   font-size: 4rem
@@ -110,7 +109,7 @@ section
     font-size: 2rem
 
 #subhead p
-  font-size: 1rem
+  font-size: 1em
   @include XL
     font-size: em(27)
   @include desktop
@@ -119,7 +118,6 @@ section
     font-size:  em(27*0.7)
   @include phone
     font-size:  em(27*0.6)
-
 
 #subheading
   margin: 0px
@@ -153,12 +151,11 @@ section
   animation: sdb06 1.5s infinite
   box-sizing: border-box
   @include phone
-    border-left:  em(5) solid $highlight-color
-    border-bottom:  em(5) solid $highlight-color
+    border-left:  em(5) solid black
+    border-bottom:  em(5) solid black
     width: 2em
-    height:  2em
+    height: 2em
     top: 100%
-
 
 @-webkit-keyframes sdb06
   0%
@@ -321,11 +318,10 @@ section
     background-size: cover
     -o-background-size: cover
   @include tablet
-    background: url(../img/aboutme.jpg) no-repeat  0% 0% scroll
-    -webkit-background-size: cover
-    -moz-background-size: cover
-    background-size: cover
-    -o-background-size: cover
+    background: none
+    background-color: $background-on-color
+    padding:  em(20)
+    height: auto
   @include phone
     background: none
     background-color: $background-on-color
@@ -341,6 +337,14 @@ section
   height: auto
   position: absolute
   left: 30%
+  @include tablet
+    background: none
+    position: relative
+    right:  em(0)
+    padding:  em(10)
+    width: auto
+    color: black
+    left: 0%
   @include phone
     background: none
     position: relative
