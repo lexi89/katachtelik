@@ -24,6 +24,9 @@ body, p, a {
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     body, p, a {
       font-size: 1rem; } }
+  @media only screen and (min-width: 1px) and (max-width: 48.0625em) and (orientation: landscape) {
+    body, p, a {
+      font-size: 1em; } }
 
 a {
   color: #07a4b5;
@@ -31,7 +34,7 @@ a {
 
 h1 {
   font-size: 3.5em; }
-  @media only screen and (min-width: 30em) and (max-width: 48em) {
+  @media only screen and (min-width: 30em) and (max-width: 48.0625em) {
     h1 {
       font-size: 3.15em; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
@@ -61,7 +64,7 @@ section {
   background-size: cover;
   -o-background-size: cover;
   align-items: center; }
-  @media only screen and (min-width: 30em) and (max-width: 48em) {
+  @media only screen and (min-width: 30em) and (max-width: 48.0625em) {
     .header {
       background: url(../img/header.jpg) no-repeat 20% 0% scroll;
       background-size: cover; } }
@@ -69,6 +72,10 @@ section {
     .header {
       background: url(../img/header.jpg) no-repeat 30% 0% scroll;
       background-size: 250% auto; } }
+  @media only screen and (min-width: 1px) and (max-width: 48.0625em) and (orientation: landscape) {
+    .header {
+      background: url(../img/header.jpg) no-repeat 0% 50% scroll;
+      background-size: cover; } }
 
 #header-text {
   box-sizing: border-box;
@@ -85,12 +92,12 @@ section {
       width: 40%;
       left: 50%;
       top: 10%; } }
-  @media only screen and (min-width: 48em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
+  @media only screen and (min-width: 48.0625em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
     #header-text {
       width: 50%;
       left: 40%;
       top: 10%; } }
-  @media only screen and (min-width: 30em) and (max-width: 48em) {
+  @media only screen and (min-width: 30em) and (max-width: 48.0625em) {
     #header-text {
       width: 50%;
       left: 40%;
@@ -100,41 +107,50 @@ section {
       width: 60%;
       left: 35%;
       top: 10%; } }
+  @media only screen and (min-width: 1px) and (max-width: 48.0625em) and (orientation: landscape) {
+    #header-text {
+      padding: 2%; } }
 
 #header-text h1 {
   font-size: 4rem;
   font-family: "Dancing Script", cursive;
   margin-bottom: 2.4rem; }
-  @media only screen and (min-width: 48em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
+  @media only screen and (min-width: 48.0625em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
     #header-text h1 {
       font-size: 3.6 em; } }
-  @media only screen and (min-width: 30em) and (max-width: 48em) {
+  @media only screen and (min-width: 30em) and (max-width: 48.0625em) {
     #header-text h1 {
       font-size: 2.8 em; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     #header-text h1 {
       font-size: 2.5rem;
       margin-bottom: 1.8rem; } }
+  @media only screen and (min-width: 1px) and (max-width: 48.0625em) and (orientation: landscape) {
+    #header-text h1 {
+      font-size: 3rem; } }
 
 #subhead p {
   font-size: 1em; }
   @media only screen and (min-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
     #subhead p {
       font-size: 1.6875em; } }
-  @media only screen and (min-width: 48em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
+  @media only screen and (min-width: 48.0625em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
     #subhead p {
       font-size: 1.51875em; } }
-  @media only screen and (min-width: 30em) and (max-width: 48em) {
+  @media only screen and (min-width: 30em) and (max-width: 48.0625em) {
     #subhead p {
       font-size: 1.18125em; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     #subhead p {
-      font-size: 1rem; } }
+      font-size: 1em; } }
+  @media only screen and (min-width: 1px) and (max-width: 48.0625em) and (orientation: landscape) {
+    #subhead p {
+      font-size: 1em; } }
 
 #subheading {
   margin: 0px;
   line-height: 1.75em; }
-  @media only screen and (min-width: 30em) and (max-width: 48em) {
+  @media only screen and (min-width: 30em) and (max-width: 48.0625em) {
     #subheading {
       margin-bottom: 0em; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
@@ -172,6 +188,13 @@ section {
       width: 2em;
       height: 2em;
       top: 100%; } }
+  @media only screen and (min-width: 1px) and (max-width: 48.0625em) and (orientation: landscape) {
+    #section06 a span {
+      border-left: 5px solid black;
+      border-bottom: 5px solid black;
+      width: 2em;
+      height: 2em;
+      top: 110%; } }
 
 @-webkit-keyframes sdb06 {
   0% {
@@ -208,14 +231,14 @@ section {
   opacity: 0.5; }
 
 /* Summary */
-#summary {
-  padding-left: 5%; }
+#summary .container {
+  width: 100% !important; }
 
 /* Testimonials */
 #testimonials {
   height: auto;
   background-color: rgba(205, 220, 240, 0.5); }
-  @media only screen and (min-width: 48em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
+  @media only screen and (min-width: 48.0625em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
     #testimonials {
       padding: 4.6875em 0.625em; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
@@ -232,7 +255,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center; }
-  @media only screen and (min-width: 30em) and (max-width: 48em) {
+  @media only screen and (min-width: 30em) and (max-width: 48.0625em) {
     .slick-slide {
       flex-direction: column; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
@@ -254,7 +277,7 @@ section {
   border-radius: 12.5em;
   width: 12.5em;
   height: auto; }
-  @media only screen and (min-width: 30em) and (max-width: 48em) {
+  @media only screen and (min-width: 30em) and (max-width: 48.0625em) {
     .floating-head-image {
       width: 6.25em; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
@@ -273,12 +296,15 @@ section {
 .testimonial-text {
   width: 50%;
   font-style: italic; }
-  @media only screen and (min-width: 30em) and (max-width: 48em) {
+  @media only screen and (min-width: 30em) and (max-width: 48.0625em) {
     .testimonial-text {
       width: 18.75em; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     .testimonial-text {
       width: auto; } }
+  @media only screen and (min-width: 1px) and (max-width: 48.0625em) and (orientation: landscape) {
+    .testimonial-text {
+      width: 80%; } }
 
 /* Testimonial arrows */
 .line-arrow {
@@ -298,7 +324,7 @@ section {
   left: 0em;
   border-right: none;
   border-bottom: none; }
-  @media only screen and (min-width: 30em) and (max-width: 48em) {
+  @media only screen and (min-width: 30em) and (max-width: 48.0625em) {
     .line-arrow.left {
       display: none; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
@@ -311,7 +337,7 @@ section {
   border-bottom: none;
   border-left: none;
   transform: rotate(54deg) skew(20deg); }
-  @media only screen and (min-width: 30em) and (max-width: 48em) {
+  @media only screen and (min-width: 30em) and (max-width: 48.0625em) {
     .line-arrow.right {
       display: none; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
@@ -333,14 +359,14 @@ section {
   -o-background-size: cover;
   display: flex;
   justify-content: flex-end; }
-  @media only screen and (min-width: 48em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
+  @media only screen and (min-width: 48.0625em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
     #about-me {
       background: url(../img/aboutme.jpg) no-repeat 0% 0% scroll;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       background-size: cover;
       -o-background-size: cover; } }
-  @media only screen and (min-width: 30em) and (max-width: 48em) {
+  @media only screen and (min-width: 30em) and (max-width: 48.0625em) {
     #about-me {
       background: none;
       background-color: rgba(205, 220, 240, 0.5);
@@ -361,7 +387,7 @@ section {
   height: auto;
   position: absolute;
   left: 30%; }
-  @media only screen and (min-width: 30em) and (max-width: 48em) {
+  @media only screen and (min-width: 30em) and (max-width: 48.0625em) {
     #about-me-textbox {
       background: none;
       position: relative;
@@ -383,16 +409,15 @@ section {
 #about-me-textbox h1 {
   font-size: 4rem;
   font-family: "Dancing Script", cursive; }
-  @media only screen and (min-width: 48em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
+  @media only screen and (min-width: 48.0625em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
     #about-me-textbox h1 {
       font-size: 3.6 em; } }
-  @media only screen and (min-width: 30em) and (max-width: 48em) {
+  @media only screen and (min-width: 30em) and (max-width: 48.0625em) {
     #about-me-textbox h1 {
       font-size: 2.8 em; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     #about-me-textbox h1 {
-      font-size: 2.8rem;
-      text-align: center; } }
+      font-size: 2.8rem; } }
 
 /* Contact form */
 #contact {
@@ -431,6 +456,9 @@ section {
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     #message {
       width: 100%; } }
+  @media only screen and (min-width: 1px) and (max-width: 48.0625em) and (orientation: landscape) {
+    #message {
+      width: 90%; } }
 
 button[type=submit] {
   margin-left: 0.625em; }
@@ -493,10 +521,10 @@ hr.small {
 @media only screen and (min-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
   .qod-breaks {
     display: block; } }
-@media only screen and (min-width: 30em) and (max-width: 48em) {
+@media only screen and (min-width: 30em) and (max-width: 48.0625em) {
   .qod-breaks {
     display: block; } }
-@media only screen and (min-width: 48em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-width: 48.0625em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
   .qod-breaks {
     display: block; } }
 @media only screen and (min-width: 1px) and (max-width: 30em) {

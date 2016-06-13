@@ -18,7 +18,7 @@ $background-on-color: rgba(205, 220, 240, 0.5)
   transition: $args
 
 $phone: em(480)
-$tablet: em(768)
+$tablet: em(769)
 $desktop: em(1281)
 
 @mixin XL
@@ -35,4 +35,8 @@ $desktop: em(1281)
 
 @mixin phone
   @media only screen and (min-width: 1px) and (max-width: $phone)
+    @content
+
+@mixin phone-landscape
+  @media only screen and (min-width: 1px) and (max-width: $tablet) and (orientation:landscape)
     @content
