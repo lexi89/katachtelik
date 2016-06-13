@@ -99,7 +99,7 @@ section {
     #header-text {
       width: 60%;
       left: 35%;
-      top: 15%; } }
+      top: 10%; } }
 
 #header-text h1 {
   font-size: 4rem;
@@ -391,7 +391,8 @@ section {
       font-size: 2.8 em; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     #about-me-textbox h1 {
-      font-size: 2rem; } }
+      font-size: 2.8rem;
+      text-align: center; } }
 
 /* Contact form */
 #contact {
@@ -427,6 +428,9 @@ section {
 #message {
   border: 0.125em solid #07a4b5;
   width: 80%; }
+  @media only screen and (min-width: 1px) and (max-width: 30em) {
+    #message {
+      width: 100%; } }
 
 button[type=submit] {
   margin-left: 0.625em; }

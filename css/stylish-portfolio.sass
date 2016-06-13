@@ -95,7 +95,7 @@ section
   @include phone
     width: 60%
     left: 35%
-    top:  15%
+    top:  10%
 
 #header-text h1
   font-size: 4rem
@@ -365,7 +365,8 @@ section
   @include tablet
     font-size: (4*0.7)em
   @include phone
-    font-size: 2rem
+    font-size: 2.8rem
+    text-align: center
 
 /* Contact form*/
 
@@ -400,6 +401,8 @@ section
 #message
   border: em(2) solid $highlight-color
   width: 80%
+  @include phone
+    width: 100%
 
 
 button[type=submit]
