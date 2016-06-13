@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5 {
 
 body, p, a {
   font-family: "Lora", serif;
-  font-size: 2vh; }
+  font-size: 18px; }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     body, p, a {
       font-size: 1rem; } }
@@ -361,7 +361,7 @@ section {
   justify-content: flex-end; }
   @media only screen and (min-width: 48.0625em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
     #about-me {
-      background: url(../img/aboutme.jpg) no-repeat 0% 0% scroll;
+      background: url(../img/aboutme.jpg) no-repeat 40% 0% scroll;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       background-size: cover;
@@ -432,12 +432,12 @@ section {
   width: auto;
   margin: 0.625em;
   height: auto;
-  font-size: 21px; }
+  font-size: 18px; }
   .form-control:focus {
     box-shadow: none; }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     .form-control {
-      font-size: 16.8px;
+      font-size: 14.4px;
       margin: 0em; } }
 
 .details {
