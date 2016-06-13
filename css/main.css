@@ -113,7 +113,7 @@ section {
       font-size: 2.8 em; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     #header-text h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 1.8rem; } }
 
 #subhead p {
@@ -129,7 +129,7 @@ section {
       font-size: 1.18125em; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     #subhead p {
-      font-size: 2.7vh; } }
+      font-size: 1rem; } }
 
 #subheading {
   margin: 0px;
