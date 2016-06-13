@@ -82,7 +82,7 @@ section {
   padding: 4%;
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
-  width: 25%;
+  width: 40%;
   left: 50%;
   top: 10%;
   height: auto;
@@ -123,11 +123,11 @@ section {
       font-size: 2.8 em; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     #header-text h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1.8rem; } }
+      font-size: 2.5em;
+      margin-bottom: 1.8em; } }
   @media only screen and (min-width: 1px) and (max-width: 48.0625em) and (orientation: landscape) {
     #header-text h1 {
-      font-size: 3rem; } }
+      font-size: 3em; } }
 
 #subhead p {
   font-size: 1em; }
@@ -380,7 +380,7 @@ section {
       height: auto; } }
 
 #about-me-textbox {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 50%;
   color: white;
   padding: 3%;
