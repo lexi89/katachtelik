@@ -5,7 +5,7 @@
  */
 /* Global Styles */
 html {
-  font-size: 16px; }
+  font-size: 18px; }
 
 html,
 body {
@@ -361,7 +361,7 @@ section {
   justify-content: flex-end; }
   @media only screen and (min-width: 48.0625em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
     #about-me {
-      background: url(../img/aboutme.jpg) no-repeat 40% 0% scroll;
+      background: url(../img/aboutme.jpg) no-repeat 40% 40% scroll;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       background-size: cover;
