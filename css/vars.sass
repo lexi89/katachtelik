@@ -1,25 +1,10 @@
-
-html
-  font-size: 18px
-
 @function em($pixels)
   @return #{$pixels/16}em
-
-$highlight-color: #07a4b5
-$body-font: "Lora", serif
-$body-font-size: 18px
-$background-on-color: rgba(205, 220, 240, 0.5)
-
-@mixin transition($args...)
-  -webkit-transition: $args
-  -moz-transition: $args
-  -ms-transition: $args
-  -o-transition: $args
-  transition: $args
 
 $phone: em(480)
 $tablet: em(769)
 $desktop: em(1281)
+
 
 @mixin XL
   @media only screen and (min-width: $desktop) and (-webkit-min-device-pixel-ratio: 1)
@@ -40,3 +25,27 @@ $desktop: em(1281)
 @mixin phone-landscape
   @media only screen and (min-width: 1px) and (max-width: $tablet) and (orientation:landscape)
     @content
+
+
+html
+  @include phone
+    font-size: 18px !important
+  @include tablet
+    font-size: 20px !important
+  @include desktop
+    font-size: 20px !important
+  @include XL
+    font-size: 22px !important
+
+
+$highlight-color: #07a4b5
+$body-font: "Lora", serif
+$body-font-size: 1em
+$background-on-color: rgba(205, 220, 240, 0.5)
+
+@mixin transition($args...)
+  -webkit-transition: $args
+  -moz-transition: $args
+  -ms-transition: $args
+  -o-transition: $args
+  transition: $args

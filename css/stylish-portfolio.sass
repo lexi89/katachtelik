@@ -9,8 +9,10 @@
 
 html,
 body
-  width: 100%
-  height: 100%
+  width: 100vw
+
+.pink
+  background-color: pink !important
 
 \:focus
   outline: none
@@ -18,24 +20,16 @@ body
 h1,h2,h3,h4,h5
   font-family: 'Dancing Script', cursive
 
+h1
+  font-size: 4em
+
 body, p, a
   font-family: $body-font
-  font-size: $body-font-size
-  @include phone
-    font-size: 1rem
-  @include phone-landscape
-    font-size: 1em
+  font-size: inherit
 
 a
   color: $highlight-color
   text-decoration: underline
-
-h1
-  font-size: em(56)
-  @include tablet
-    font-size: em(56*0.9)
-  @include phone
-    font-size: em(56*0.8)
 
 p
   margin-bottom: em(20)
@@ -45,179 +39,39 @@ section
   @include phone
     padding: 0px em(20)
 
+// container
+
+.content-wrapper
+  padding: 0px
+
 /* Header */
 .highlight
   color: $highlight-color
 
-.header
-  width: 100%
-  height: 100%
-  padding: em(50)
-  background: url(../img/header.jpg) no-repeat 10% center scroll
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  background-size: cover
-  -o-background-size: cover
-  // display: flex
-  // justify-content: flex-end
+.vertical-align
+  display: flex
   align-items: center
-  @include tablet
-    background: url(../img/header.jpg) no-repeat 20% 0% scroll
-    background-size: cover
+
+.header
+  background: url(../img/header.jpg) no-repeat center center fixed
+  background-size: cover
+  height: 100vh
   @include phone
-    background: url(../img/header.jpg) no-repeat 30% 0% scroll
-    background-size: 250% auto
-  @include phone-landscape
-    background: url(../img/header.jpg) no-repeat 0% 50% scroll
+    background: url(../img/header.jpg) no-repeat 30% 0% fixed
     background-size: cover
 
+
+.header-text-wrapper
+  background-color: transparent !important
 
 #header-text
-  // font-size: 1rem
-  box-sizing: border-box
-  padding: 4%
-  background-color: rgba(0, 0, 0, 0.6)
-  position: absolute
-  width: 40%
-  left: 50%
-  top: 10%
-  height: auto
-  // position: fixed
-  // max-height: 700px
+  padding: 2em
+  background-color: rgba(black, 0.5)
   color: white
-  @include XL
-    width: 40%
-    left: 50%
-    top: 10%
-  @include desktop
-    width: 50%
-    left: 40%
-    top: 10%
-  @include tablet
-    width: 50%
-    left: 40%
-    top:  10%
+  max-width: 50vw
   @include phone
-    width: 60%
-    left: 35%
-    top: 10vh
-  @include phone-landscape
-    padding: 2%
-
-#header-text h1
-  font-size: 4rem
-  font-family: 'Dancing Script', cursive
-  margin-bottom: 2.4rem
-  @include desktop
-    font-size: (4*0.9)em
-  @include tablet
-    font-size: (4*0.7)em
-  @include phone
-    margin-top: 0px
-    font-size: 2.5em
-    margin-bottom: 1rem
-  @include phone-landscape
-    font-size: 2em
-    margin-bottom: 0.5rem
-
-#subhead p
-  font-size: 1em
-  @include XL
-    font-size: em(27)
-  @include desktop
-    font-size:  em(27*0.9)
-  @include tablet
-    font-size:  em(27*0.7)
-  @include phone
-    font-size: 1em
-  @include phone-landscape
-    font-size: 1em
-
-#subheading
-  margin: 0px
-  line-height: 1.75em
-  @include tablet
-    margin-bottom: em(0)
-  @include phone
-    line-height: em(30)
-
-
-.thanks
-  margin-bottom:  2.4rem
-  @include phone
-    margin-bottom: 1rem
-  @include phone-landscape
-    margin-bottom: 1rem
-
-// fancy scroll
-
-#section06 a
-  padding-top:  em(70)
-
-#section06 a span
-  font-size: 1rem
-  position: absolute
-  top: em(10)
-  left: 50%
-  width: em(50)
-  height: em(50)
-  margin-left: em(-12)
-  border-left: em(3) solid black
-  border-bottom: em(3) solid black
-  -webkit-transform: rotateZ(-45deg)
-  transform: rotateZ(-45deg)
-  -webkit-animation: sdb06 1.5s infinite
-  animation: sdb06 1.5s infinite
-  box-sizing: border-box
-  @include phone
-    border-left:  em(5) solid $highlight-color
-    border-bottom:  em(5) solid $highlight-color
-    width: 2em
-    height: 2em
-    top: 100%
-  @include phone-landscape
-    border-left:  5px solid black
-    border-bottom:  5px solid black
-    width: 2em
-    height: 2em
-    top: 110%
-
-
-@-webkit-keyframes sdb06
-  0%
-    -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0)
-    opacity: 0
-  50%
-    opacity: 1
-  100%
-    -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px)
-    opacity: 0
-
-@keyframes sdb06
-  0%
-    transform: rotateY(0) rotateZ(-45deg) translate(0, 0)
-    opacity: 0
-  50%
-    opacity: 1
-  100%
-    transform: rotateY(720deg) rotateZ(-45deg) translate(-20, 20)
-    opacity: 0
-
-.demo a
-  position: absolute
-  bottom:  em(20)
-  left: 50%
-  z-index: 2
-  display: inline-block
-  -webkit-transform: translate(0, -50%)
-  transform: translate(0, -50%)
-  color: $highlight-color
-  font-family: $body-font
-  text-decoration: none
-  transition: opacity .3s
-
-.demo a:hover
-  opacity: .5
+    max-width: 80vw
+  h1
 
 /* Summary */
 
@@ -330,8 +184,6 @@ section
 
 /* About Me */
 #about-me
-  width: 100%
-  height: 100%
   background: url(../img/aboutme.jpg) no-repeat 40% 40% scroll
   -webkit-background-size: cover
   -moz-background-size: cover
@@ -353,45 +205,26 @@ section
   @include phone
     background: none
     background-color: $background-on-color
-    padding:  em(20)
     height: auto
 
 
 #about-me-textbox
   background-color: rgba(0, 0, 0, 0.6)
-  width: 50%
   color: white
-  padding: 3%
   height: auto
-  position: absolute
-  left: 30%
+  padding: 2em
   @include tablet
     background: none
-    position: relative
-    right:  em(0)
-    padding:  em(10)
-    width: auto
     color: black
-    left: 0%
   @include phone
     background: none
-    position: relative
-    right:  em(0)
-    padding:  em(10)
-    width: auto
     color: black
-    left: 0%
+    padding: 0px
 
 #about-me-textbox h1
-  font-size: 4rem
   font-family: 'Dancing Script', cursive
-  @include desktop
-    font-size: (4*0.9)em
-  @include tablet
-    font-size: (4*0.7)em
   @include phone
-    font-size: 2.8rem
-
+    text-align: center
 
 /* Contact form*/
 
