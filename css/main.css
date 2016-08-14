@@ -63,14 +63,18 @@ section {
 
 .header {
   background: url(../img/header.jpg) no-repeat center center fixed;
-  background-size: cover;
   -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
   height: 100vh; }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     .header {
       background: url(../img/header.jpg) no-repeat 30% 0% fixed;
-      background-size: cover;
-      -webkit-background-size: cover;} }
+      -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;} }
 
 .header-text-wrapper {
   background-color: transparent !important; }
