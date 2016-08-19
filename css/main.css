@@ -17,9 +17,6 @@
   html {
     font-size: 22px !important; } }
 
-i{
-  font-style: italic;
-}
 html,
 body {
   width: 100vw; }
@@ -65,19 +62,13 @@ section {
   align-items: center; }
 
 .header {
-  background: url(../img/header.jpg) no-repeat center center;
-  -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+  background: url(../img/header.jpg) no-repeat center center fixed;
+  background-size: cover;
   height: 100vh; }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     .header {
-      background: url(../img/header.jpg) no-repeat 30% 0%;
-      -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;} }
+      background: url(../img/header.jpg) no-repeat 30% 0% fixed;
+      background-size: cover; } }
 
 .header-text-wrapper {
   background-color: transparent !important; }
@@ -341,9 +332,12 @@ hr.small {
     .portfolio-item {
       padding: 1.25em 0em; } }
 
+.img-responsive {
+  max-height: 3.75em; }
+
 .img-portfolio {
   margin: 0 auto;
-  height: 3.75em;
+  max-height: 3.75em;
   width: auto; }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     .img-portfolio {
