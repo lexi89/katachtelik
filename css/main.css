@@ -58,8 +58,12 @@ section {
   color: #07a4b5; }
 
 .vertical-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .header {
   background: url(../img/header.jpg) no-repeat center center fixed;
@@ -98,27 +102,54 @@ section {
       padding-top: 1em; } }
 
 .slick-slider {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
-  align-items: center;
-  justify-content: center; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .slick-slide {
   padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media only screen and (min-width: 30em) and (max-width: 48.0625em) {
     .slick-slide {
-      flex-direction: column; } }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     .slick-slide {
-      flex-direction: column; } }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .floating-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-right: 2.1875em; }
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     .floating-head {
@@ -171,7 +202,8 @@ section {
 .line-arrow.left {
   border-top: 0.0625em solid #07a4b5;
   border-left: 0.0625em solid #07a4b5;
-  transform: rotate(-54deg) skew(-20deg);
+  -webkit-transform: rotate(-54deg) skew(-20deg);
+          transform: rotate(-54deg) skew(-20deg);
   position: relative;
   left: 0em;
   border-right: none;
@@ -188,7 +220,8 @@ section {
   border: 0.0625em solid #07a4b5;
   border-bottom: none;
   border-left: none;
-  transform: rotate(54deg) skew(20deg); }
+  -webkit-transform: rotate(54deg) skew(20deg);
+          transform: rotate(54deg) skew(20deg); }
   @media only screen and (min-width: 30em) and (max-width: 48.0625em) {
     .line-arrow.right {
       display: none; } }
@@ -203,17 +236,17 @@ section {
 /* About Me */
 #about-me {
   background: url(../img/aboutme.jpg) no-repeat 40% 40% scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end; }
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
   @media only screen and (min-width: 48.0625em) and (max-width: 80.0625em) and (-webkit-min-device-pixel-ratio: 1) {
     #about-me {
       background: url(../img/aboutme.jpg) no-repeat 40% 40% scroll;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
       background-size: cover;
       -o-background-size: cover; } }
   @media only screen and (min-width: 30em) and (max-width: 48.0625em) {
@@ -302,9 +335,6 @@ button[type=submit] {
   .btn-default:hover {
     background-color: #057884;
     -webkit-transition: background-color 0.3s ease;
-    -moz-transition: background-color 0.3s ease;
-    -ms-transition: background-color 0.3s ease;
-    -o-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
     color: white; }
 
@@ -374,5 +404,3 @@ footer {
   @media only screen and (min-width: 1px) and (max-width: 30em) {
     footer {
       padding: 1.25em; } }
-
-/*# sourceMappingURL=main.css.map */
