@@ -53,12 +53,14 @@ section
   align-items: center
 
 .header
-  background: url(../img/header.jpg) no-repeat center center fixed
+  background: url(../img/header.jpg) no-repeat center center
   background-size: cover
-  height: 100vh
+  min-height: 100vh
   @include phone
-    background: url(../img/header.jpg) no-repeat 30% 0% fixed
+    background: url(../img/header.jpg) no-repeat
+    background-position: 30% 0%
     background-size: cover
+    height: 100vh
 
 
 .header-text-wrapper
@@ -71,7 +73,6 @@ section
   max-width: 50vw
   @include phone
     max-width: 80vw
-  h1
 
 /* Summary */
 
