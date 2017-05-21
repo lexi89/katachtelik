@@ -350,6 +350,64 @@ footer
 #enjoy
   background-color: rgba(205, 220, 240, 0.5)
 
-#button-headline
+#pink-button
   font-size: 20px
   padding: 0.5em 1em
+  background-color: #f12e5a
+  border: none
+  &:hover
+    background-color: #f12e5a
+
+// Testimonials page
+#testimonials-header
+  min-height: 600px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  @include phone
+    min-height: 100vh
+    padding: 1em
+    margin: 0 auto
+    text-align: center
+
+#testimonials-section
+  max-width: 1280px
+  margin: 0 auto
+
+.grid
+  margin: 0 auto
+
+.grid-item
+  padding: 1em
+  width: 300px
+  // margin-bottom: 2em
+  @include phone
+    width: 90%
+    margin-bottom: 0px
+
+.testimonial-paragraphs
+  font-size: 15px
+
+.testimonial-names
+  font-size: 13px
+  display: block
+  font-weight: bold
+
+.testimonial-jobs
+  font-size: 13px
+  display: block
+
+.head-circles
+  border-radius: 50%
+  height: 75px
+  width: 75px
+  background-size: cover
+  float: left
+  margin-right: 20px
+
+#tButtonWrapper
+  display: block
+  text-align: center
+  padding: 1em
+
