@@ -56,7 +56,7 @@ section
   min-height: 100vh
   @include phone
     background: url(../img/header.jpg) no-repeat
-    background-position: 30% 0%
+    background-position: 0% 0%
     background-size: cover
     height: 100vh
 
@@ -64,13 +64,22 @@ section
 .header-text-wrapper
   background-color: transparent !important
 
+header#top
+  @include phone
+    display: flex
+    align-items: baseline
+
 #header-text
+  min-height: 200px
   padding: 2em
   background-color: rgba(black, 0.5)
   color: white
   max-width: 50vw
   @include phone
+    min-width: 80vw
     max-width: 80vw
+    margin-top: 1em
+    min-height: 250px
 
 // opening bullets
 .normal-list
@@ -268,6 +277,12 @@ section
   @include phone-landscape
     width: 90%
 
+#subheading
+  font-size: 1.3em
+  margin: 0px
+
+#subheading p
+  margin: 0px
 
 button[type=submit]
   margin-left:  em(10)
