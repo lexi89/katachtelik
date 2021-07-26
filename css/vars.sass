@@ -6,6 +6,17 @@ $tablet: em(769)
 $desktop: em(1281)
 
 
+@font-face 
+  font-family: "baron"
+  font-weight: 400
+  src: url(/fonts/Nocturno.otf) format('OpenType')
+
+@font-face 
+  font-family: "nocturno" 
+  font-weight: 400
+  src: url(/fonts/Nocturno.otf) format('OpenType')
+
+
 @mixin XL
   @media only screen and (min-width: $desktop) and (-webkit-min-device-pixel-ratio: 1)
     @content
@@ -39,7 +50,7 @@ html
 
 
 $highlight-color: #07a4b5
-$body-font: "Lora", serif
+$body-font: "nocturno", serif
 $body-font-size: 1em
 $background-on-color: rgba(205, 220, 240, 0.5)
 
