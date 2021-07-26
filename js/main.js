@@ -7,27 +7,28 @@ $(document).ready(function () {
     $(".carousel").slick("slickPrev");
   });
 
-  var subhead = document.getElementById('subheading');
+  var subhead = document.getElementById("subheading");
 
   var typewriter = new Typewriter(subhead, {
     loop: true,
     delay: 50,
-    deleteSpeed: 0
+    deleteSpeed: 0,
   });
 
-  typewriter.typeString("Hi, I'm Kat")
-    .pauseFor(500)
+  typewriter
+    .typeString("Hi, I'm Kat")
+    .pauseFor(300)
     .typeString("<br>I'm a copywriter, a storyteller and")
-    .pauseFor(1500)
+    .pauseFor(500)
     .typeString("<br>Nope")
-    .pauseFor(800)
+    .pauseFor(500)
     .deleteChars(39)
     .pauseFor(500)
     .typeString("I help brands sound human.")
-    .pauseFor(1500)
+    .pauseFor(1000)
     .deleteChars(26)
     .typeString("Waaaasuuuuup")
-    .pauseFor(1500)
+    .pauseFor(1000)
     .deleteChars(23)
     .typeString("Copywriting is:")
     .pauseFor(500)
@@ -40,7 +41,9 @@ $(document).ready(function () {
     .typeString("eroles.")
     .pauseFor(1000)
     .deleteAll(0)
-    .typeString("If you want to be remembered as bold, funny and relatable, while")
+    .typeString(
+      "If you want to be remembered as bold, funny and relatable, while"
+    )
     .pauseFor(1000)
     .deleteAll(0)
     .changeDelay(150)
@@ -54,7 +57,7 @@ $(document).ready(function () {
     .pauseFor(500)
     .deleteAll(0)
     .typeString("At least it's not snowing.")
-    .pauseFor(2500)
+    .pauseFor(1500)
     .deleteAll(0)
     // .pauseFor(2500)
     // .typeString('<strong>altered!</strong>')
