@@ -51,35 +51,51 @@ section
   align-items: center
 
 .header
-  background: url(../img/header.jpg) no-repeat center center
+  background: url(../img/4807.jpg) no-repeat center center
   background-size: cover
   min-height: 100vh
   @include phone
-    background: url(../img/header.jpg) no-repeat
-    background-position: 0% 0%
+    background: url(../img/4807-mobile.png) no-repeat right center
     background-size: cover
     height: 100vh
 
-
 .header-text-wrapper
   background-color: transparent !important
+  display: flex
+  justify-content: end
+  height: 100vh
+
+#header-text
+  min-height: 300px
+  min-width: 30vw
+  max-height: 30vh
+  margin-top: 10vh
+  margin-right: 10vw
+  padding: 2em
+  background-color: rgba(white, 0.9)
+  color: #010334
+  max-width: 30vw
+  @include phone
+    min-width: 40vw
+    padding: 1em
+    font-size: 14px
+    margin-right: 0px
+    margin-left: 5vw
+    margin-top: 30vh
+    min-height: 20vh
+    max-height: 20vh
+    // max-height: 10vh
+    // min-height: 10px
+
+    // min-width: 40vw
+    // max-width: 40vw
+    // margin-top: 1em
+    // min-height: 250px
 
 header#top
   @include phone
     display: flex
     align-items: baseline
-
-#header-text
-  min-height: 200px
-  padding: 2em
-  background-color: rgba(black, 0.5)
-  color: white
-  max-width: 50vw
-  @include phone
-    min-width: 80vw
-    max-width: 80vw
-    margin-top: 1em
-    min-height: 250px
 
 // opening bullets
 .normal-list
@@ -97,7 +113,7 @@ header#top
   height: auto
   background-color: $background-on-color
   @include desktop
-    padding:  em(75)  em(10)
+    padding: em(75) em(10)
   @include phone
     padding-top: 1em
 
@@ -121,24 +137,24 @@ header#top
   align-items: center
   justify-content: center
   flex-direction: column
-  margin-right:  em(35)
+  margin-right: em(35)
   @include phone
-    margin:  em(0)
+    margin: em(0)
 
 .floating-head-image
-  margin:  em(20)
-  border-radius:  em(200)
-  width:  em(200)
+  margin: em(20)
+  border-radius: em(200)
+  width: em(200)
   height: auto
   @include tablet
-    width:  em(100)
+    width: em(100)
   @include phone
-    width:  em(100)
+    width: em(100)
 
 .person-desc
   text-align: center
   font-style: italic
-  width:  em(300)
+  width: em(300)
   @include phone
     width: auto
     overflow: visible
@@ -147,12 +163,11 @@ header#top
   width: 50%
   font-style: italic
   @include tablet
-    width:  em(300)
+    width: em(300)
   @include phone
     width: auto
   @include phone-landscape
     width: 80%
-
 
 /* Testimonial arrows*/
 
@@ -160,17 +175,17 @@ header#top
   z-index: 900
   background-color: transparent
   display: inline-block
-  font-size:  1.25em /*set the size for arrow*/
+  font-size: 1.25em /*set the size for arrow*/
   width: 2em
   height: 2em
   margin-top: -2em
 
 .line-arrow.left
-  border-top:  em(1) solid $highlight-color
-  border-left:  em(1) solid $highlight-color
+  border-top: em(1) solid $highlight-color
+  border-left: em(1) solid $highlight-color
   transform: rotate(-54deg) skew(-20deg)
   position: relative
-  left:  em(0)
+  left: em(0)
   border-right: none
   border-bottom: none
   @include tablet
@@ -179,8 +194,8 @@ header#top
     display: none
 
 .line-arrow.right
-  right:  em(0)
-  border:  em(1) solid $highlight-color
+  right: em(0)
+  border: em(1) solid $highlight-color
   border-bottom: none
   border-left: none
   transform: rotate(54deg) skew(20deg)
@@ -189,55 +204,40 @@ header#top
   @include phone
     display: none
 
-
 .line-arrow:active,
 .line-arrow.active
-  border-width:  em(2)
-
+  border-width: em(2)
 
 /* About Me */
 #about-me
-  background: url(../img/aboutme.jpg) no-repeat 40% 40% scroll
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  background-size: cover
-  -o-background-size: cover
+  background-color: $background-on-color
+  @include phone
+    padding-top: 25px
+    padding-bottom: 25px
+
+.randomRow
   display: flex
-  justify-content: flex-end
-  @include desktop
-    background: url(../img/aboutme.jpg) no-repeat 40% 40% scroll
-    -webkit-background-size: cover
-    -moz-background-size: cover
-    background-size: cover
-    -o-background-size: cover
-  @include tablet
-    background: none
-    background-color: $background-on-color
-    padding:  em(20)
-    height: auto
   @include phone
-    background: none
-    background-color: $background-on-color
-    height: auto
+    flex-direction: column
 
-
-#about-me-textbox
-  background-color: rgba(0, 0, 0, 0.6)
-  color: white
-  height: auto
-  padding: 2em
-  @include tablet
-    background: none
-    color: black
+.randomTile
+  width: 100%
   @include phone
-    background: none
-    color: black
-    padding: 0px
+    width: 100%
 
-#about-me-textbox h1
+.randomTile.padded
+  padding: 1em
   @include phone
-    text-align: center
+    padding-top: 0px
+    padding-bottom: 0px
 
+.randomTile.smol
+  width: 65%
+  @include phone
+    width: 100%
+
+.randomTile img
+  width: 100%
 /* Contact form*/
 
 #contact
@@ -249,7 +249,7 @@ header#top
   border: none
   box-shadow: none
   width: auto
-  margin:  em(10)
+  margin: em(10)
   height: auto
   font-size: $body-font-size
   &:focus
@@ -263,10 +263,10 @@ header#top
   border-radius: em(0)
 
 #name
-  width:  40%
+  width: 40%
 
 #email
-  width:  40%
+  width: 40%
 
 #message
   border: em(2) solid $highlight-color
@@ -284,9 +284,9 @@ header#top
   margin: 0px
 
 button[type=submit]
-  margin-left:  em(10)
+  margin-left: em(10)
   @include phone
-    margin:  em(0)
+    margin: em(0)
 
 // buttons
 
@@ -299,38 +299,47 @@ button[type=submit]
     color: white
 /* Custom Horizontal Rule */
 
-
 hr.small
-  max-width:  em(100)
-  border-top:  em(1) solid $highlight-color
+  max-width: em(100)
+  border-top: em(1) solid $highlight-color
 
 /* Portfolio */
 
 .narrow
-  padding:  5% 10% 0% 10%
+  padding: 5% 10% 0% 10%
   @include phone
-    padding:  em(20)  em(20)  em(0)  em(20)
+    padding: em(20) em(20) em(0) em(20)
+
+#portfolioMobile
+  display: none
+  @include phone
+    display: initial
+
+#portfolioDesktop
+  display: initial
+  @include phone
+    display: none
 
 .portfolio
-  padding:  em(50)  em(0)
+  padding: em(50) em(0)
   @include phone
     padding-top: 1em
 
 .portfolio-item
-  margin:  em(20)
+  margin: em(20)
   @include phone
-    padding:  em(20)  em(0)
+    padding: em(20) em(0)
 
 .img-responsive
   max-height: 3.75em
 
 .img-portfolio
   margin: 0 auto
-  max-height:  75px
+  max-height: 75px
   width: auto
   @include phone
     height: auto
-    max-width:  50px
+    max-width: 50px
 
 .img-portfolio:hover
   opacity: 0.8
@@ -356,9 +365,9 @@ hr.small
 /* Footer */
 
 footer
-  padding:  em(100)  em(0)
+  padding: em(100) em(0)
   @include phone
-    padding:  em(20)
+    padding: em(20)
 
 .italic
   font-style: italic
@@ -380,7 +389,6 @@ footer
 #testimonials-header-wrapper
   background-size: cover
   background-position: center bottom
-
 
 #testimonials-header
   min-height: 600px

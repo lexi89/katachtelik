@@ -23,5 +23,8 @@
     "gulp-sass": "^5.0.0",
     "macy": "^2.5.1",
     "sass": "^1.36.0"
+  },
+  "devDependencies": {
+    "gulp-file-include": "^2.3.0"
   }
 }

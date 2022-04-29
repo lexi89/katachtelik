@@ -7,6 +7,14 @@ $(document).ready(function () {
     $(".carousel").slick("slickPrev");
   });
 
+  fetch("./portfolioList.html")
+    .then(response => {
+      return response.text()
+    })
+    .then(data => {
+      $("#portfolioDesktop").html(data);
+    });
+
   var subhead = document.getElementById("subheading");
 
   var typewriter = new Typewriter(subhead, {
@@ -59,8 +67,5 @@ $(document).ready(function () {
     .typeString("At least it's not snowing.")
     .pauseFor(1500)
     .deleteAll(0)
-    // .pauseFor(2500)
-    // .typeString('<strong>altered!</strong>')
-    // .pauseFor(2500)
     .start();
 });
