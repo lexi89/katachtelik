@@ -5,7 +5,7 @@ $(document).ready(function () {
       return response.text()
     })
     .then(data => {
-      $("#portfolioDesktop").html(data);
+      $("#portfolioInjection").html(data);
     });
 
 });
