@@ -62,9 +62,9 @@ $(document).ready(function () {
     .pauseFor(500)
     .deleteAll(0)
     .typeString("Why is writing for yourself so damn hard?!")
-    .pauseFor(500)
-    .deleteAll(0)
-    .typeString("At least it's not snowing.")
+    // .pauseFor(500)
+    // .deleteAll(0)
+    // .typeString("At least it's not snowing.")
     .pauseFor(1500)
     .deleteAll(0)
     .start();

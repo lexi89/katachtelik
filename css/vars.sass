@@ -5,17 +5,20 @@ $phone: em(480)
 $tablet: em(769)
 $desktop: em(1281)
 
-
-@font-face 
+@font-face
   font-family: "baron"
   font-weight: 400
   src: url(/fonts/Nocturno.otf) format('OpenType')
 
-@font-face 
-  font-family: "nocturno" 
+@font-face
+  font-family: "nocturno"
   font-weight: 400
   src: url(/fonts/Nocturno.otf) format('OpenType')
 
+@font-face
+  font-family: "qureka"
+  font-weight: 400
+  src: url(/fonts/Qureka.otf) format('OpenType')
 
 @mixin XL
   @media only screen and (min-width: $desktop) and (-webkit-min-device-pixel-ratio: 1)
@@ -37,6 +40,10 @@ $desktop: em(1281)
   @media only screen and (min-width: 1px) and (max-width: $tablet) and (orientation:landscape)
     @content
 
+$highlight-color: #07a4b5
+$body-font: "nocturno", serif
+$body-font-size: 1em
+$background-on-color: rgba(205, 220, 240, 0.5)
 
 html
   @include phone
@@ -47,12 +54,6 @@ html
     font-size: 20px !important
   @include XL
     font-size: 22px !important
-
-
-$highlight-color: #07a4b5
-$body-font: "nocturno", serif
-$body-font-size: 1em
-$background-on-color: rgba(205, 220, 240, 0.5)
 
 @mixin transition($args...)
   -webkit-transition: $args

@@ -14,7 +14,7 @@ body
   outline: none
 
 h1,h2,h3,h4,h5
-  font-family: 'nocturno', cursive
+  font-family: 'qureka', cursive
 
 h1
   font-size: 2em
@@ -81,9 +81,9 @@ section
     font-size: 14px
     margin-right: 0px
     margin-left: 5vw
-    margin-top: 30vh
-    min-height: 20vh
-    max-height: 20vh
+    margin-top: 25vh
+    min-height: 30vh
+    max-height: 30vh
     // max-height: 10vh
     // min-height: 10px
 
@@ -339,7 +339,7 @@ hr.small
   width: auto
   @include phone
     height: auto
-    max-width: 50px
+    max-width: 150px
 
 .img-portfolio:hover
   opacity: 0.8
@@ -388,7 +388,6 @@ footer
 
 #testimonials-header-wrapper
   background-size: cover
-  background-position: center bottom
 
 #testimonials-header
   min-height: 600px
@@ -466,6 +465,8 @@ footer
   height: auto
   max-height: 100px
   margin: 0.5em
+  @include phone
+    max-width: 90px
 
 section#projects
   padding-left: 0px
@@ -476,3 +477,6 @@ section#projects
 
 .grid-item hr
   max-width: 50%
+
+.crossed-out
+  text-decoration: line-through
