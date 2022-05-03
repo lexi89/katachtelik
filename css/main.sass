@@ -26,8 +26,12 @@ body, p, a
   font-family: $body-font
 
 a
-  color: $highlight-color
+  color: $orange
   text-decoration: underline
+
+.button-link
+  &:hover
+    text-decoration: none !important
 
 p
   margin-bottom: em(20)
@@ -65,7 +69,16 @@ section
   justify-content: end
   height: 100vh
 
-#header-text
+// #header-text-inner-wrapper
+//   display: flex
+//   flex-direction: column
+//   justify-content: left
+//   align-items: center
+
+#header-text-inner-wrapper
+  display: flex
+  flex-direction: column
+  justify-content: space-between
   min-height: 300px
   min-width: 30vw
   max-height: 30vh
@@ -84,13 +97,16 @@ section
     margin-top: 25vh
     min-height: 30vh
     max-height: 30vh
-    // max-height: 10vh
-    // min-height: 10px
 
-    // min-width: 40vw
-    // max-width: 40vw
-    // margin-top: 1em
-    // min-height: 250px
+.header-button
+  position: relative
+  align-self: center
+  bottom: -6em
+  @include phone
+    bottom: -4em
+
+.linkedinBtn
+  background-color: $blue !important
 
 header#top
   @include phone
@@ -259,7 +275,7 @@ header#top
     margin: em(0)
 
 .details
-  border-bottom: em(2) solid $highlight-color
+  border-bottom: em(3) solid $highlight-color
   border-radius: em(0)
 
 #name
@@ -269,7 +285,7 @@ header#top
   width: 40%
 
 #message
-  border: em(2) solid $highlight-color
+  border: em(3) solid $highlight-color
   width: 80%
   @include phone
     width: 100%
@@ -301,7 +317,7 @@ button[type=submit]
 
 hr.small
   max-width: em(100)
-  border-top: em(1) solid $highlight-color
+  border-top: em(3) solid $highlight-color
 
 /* Portfolio */
 
@@ -377,14 +393,44 @@ footer
 
 #pink-button
   font-size: 20px
-  padding: 0.5em 1em
+  padding: 1em 1em
   border-color: #7d7b7b
   border-width: 0px 1px 1px 0px
-  background-color: #f12e5a
+  background-color: #E0915D
+  align-items: center
+  appearance: none
+  border: 0
+  border-radius: 6px
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset
+  box-sizing: border-box
+  color: #fff
+  cursor: pointer
+  display: inline-flex
+  justify-content: center
+  line-height: 1
+  list-style: none
+  overflow: hidden
+  padding-left: 16px
+  padding-right: 16px
+  position: relative
+  text-align: left
+  text-decoration: none
+  transition: box-shadow .15s,transform .15s
+  user-select: none
+  touch-action: manipulation
+  white-space: nowrap
+  will-change: box-shadow,transform
   &:hover
-    background-color: #c11c42
+    background-color: #E0915D
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #9a6541 0 -3px 0 inset
+    transform: translateY(-2px)
+  &:focus
+    box-shadow: #9a6541 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #9a6541 0 -3px 0 inset
+  &:focus
+    box-shadow: #9a6541 0 3px 7px inset
+    transform: translateY(2px)
 
-// Testimonials page
+  // Testimonials page
 
 #testimonials-header-wrapper
   background-size: cover
