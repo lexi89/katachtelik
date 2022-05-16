@@ -29,6 +29,10 @@ a
   color: $orange
   text-decoration: underline
 
+#header-linkedin
+  position: absolute
+  bottom: 28vh
+
 .button-link
   text-decoration: none !important
   &:hover
@@ -67,7 +71,8 @@ section
 .header-text-wrapper
   background-color: transparent !important
   display: flex
-  justify-content: end
+  flex-direction: column
+  align-items: flex-end
   height: 100vh
 
 // #header-text-inner-wrapper
@@ -76,10 +81,15 @@ section
 //   justify-content: left
 //   align-items: center
 
+
+#header-text
+  align-self: start
+  
 #header-text-inner-wrapper
   display: flex
   flex-direction: column
   justify-content: space-between
+  
   min-height: 300px
   min-width: 30vw
   max-height: 30vh
@@ -89,6 +99,7 @@ section
   background-color: rgba(white, 0.9)
   color: #010334
   max-width: 30vw
+  align-items: center
   @include phone
     min-width: 40vw
     padding: 1em
@@ -102,9 +113,9 @@ section
 .header-button
   position: relative
   align-self: center
-  bottom: -14em
-  @include phone
-    bottom: -12em
+  // bottom: -14em
+  // @include phone
+  //   bottom: -12em
 
 .linkedinBtn
   background-color: $blue !important
