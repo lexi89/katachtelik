@@ -69,12 +69,14 @@ section
     height: 100vh
 
 .header-text-wrapper
-  @include desktop
-    background-color: transparent !important
-    display: flex
-    flex-direction: column
-    align-items: flex-end
-    height: 100vh
+  background-color: transparent !important
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  height: 100vh
+  @include phone
+    display: initial
+    height: auto
 
 // #header-text-inner-wrapper
 //   display: flex
