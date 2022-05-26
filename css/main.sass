@@ -84,7 +84,6 @@ section
 //   justify-content: left
 //   align-items: center
 
-
 #header-text
   align-self: start
 
@@ -92,7 +91,7 @@ section
   display: flex
   flex-direction: column
   justify-content: space-between
-  
+
   min-height: 300px
   min-width: 30vw
   max-height: 30vh
@@ -239,12 +238,16 @@ header#top
 /* About Me */
 #about-me
   background-color: $background-on-color
+  display: flex
+  flex-direction: column
+  align-items: center
   @include phone
     padding-top: 25px
     padding-bottom: 25px
 
 .randomRow
   display: flex
+  max-width: 870px
   @include phone
     flex-direction: column
 
@@ -402,6 +405,11 @@ footer
 
 #enjoy
   background-color: rgba(205, 220, 240, 0.5)
+
+.no-underline
+  text-decoration: none
+  &:hover
+    text-decoration: none
 
 #pink-button
   font-size: 20px
