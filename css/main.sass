@@ -245,6 +245,9 @@ header#top
     padding-top: 25px
     padding-bottom: 25px
 
+#randomStuffHeader
+  margin-top: 0px
+
 .randomRow
   display: flex
   max-width: 870px
@@ -256,11 +259,17 @@ header#top
   @include phone
     width: 100%
 
+#noLeftPadding
+  padding-left: 0px
+
 .randomTile.padded
   padding: 1em
+  padding-top: 0px
   @include phone
-    padding-top: 0px
+    padding-top: 1em
     padding-bottom: 0px
+    padding-left: 0px
+    padding-right: 0px
 
 .randomTile.smol
   width: 65%
